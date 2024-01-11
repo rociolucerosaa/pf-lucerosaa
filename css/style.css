@@ -1,0 +1,84 @@
+
+/*reset*/
+*{font-family: 'Roboto', sans-serif;
+}
+
+/*fondos*/
+
+main{background-color: #eae6ca;}
+footer{background-color: #d9d99b;}
+
+/*colores texto*/
+header {color:#3f3f3f;}
+main{color:#3f3f3f}
+footer  {color:#3f3f3f;}
+
+/*tamaño imagenes*/
+section img {width: 350px;}
+
+/*le saco los puntitos a las listas del header y footer*/
+body header nav ul li {list-style-type:none ;}
+body footer ul li{list-style-type: none;}
+
+/*  header y footer tamaño logo*/
+header img {width: 100px;}
+footer img {width: 80px;}
+
+/*index*/
+.encabezadoindex {background-image: url('../assets/img/collaranilloo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-position-y: bottom
+}
+.videoindex{width :300px;}
+.tituloindex{font-size:35px; 
+    font-weight: 500;
+}
+
+/*sobremi*/
+.titulosobremi{font-size:35px;
+     font-weight: 500;
+}
+.imagensobremi {width:400px;}
+.titulosobremi2{font-size: 20px;
+    font-weight: 450;
+    text-decoration: underline;
+}
+
+/*tienda*/
+.titulotienda{font-size:35px;
+     font-weight: 500;
+    }
+.titulotalles{font-size:35px;
+     font-weight: 500;
+    }
+
+/*envios y cambios*/
+.tituloenviosycambios{font-size:35px;
+     font-weight: 500;
+    }
+
+/*contacto*/
+.titulocontacto{font-size:35px;
+    font-weight: 500;
+ }
+.titulodonde{font-size:35px; 
+    font-weight: 500;
+    font-style: oblique;
+}
+.mapita{width:400px;}
+.tituloform{font-size:25px; 
+    font-weight: 500;
+}
+main section h4 {font-size:20px ;
+    text-decoration: underline ;
+}
+
+/*imagenes encabezados menos el de index que es otro*/
+.encabezadonotienda {background-image: url('../assets/img/manos.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
