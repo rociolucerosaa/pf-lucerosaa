@@ -106,7 +106,7 @@ footer img {width: 80px;}
 
 .texto-card-index{
     color:#686c5e;
-    font-size:30px;
+    font-size:25px;
     text-decoration:underline;
     font-style:normal;    
     text-align: center;     
@@ -129,26 +129,88 @@ footer img {width: 80px;}
 /*sobremi*/
 .titulosobremi{
     font-size:35px;
-     font-weight: 50
+    font-weight: 50
 }
 
 .imagensobremi {
     width:400px;
 }
 
-.titulosobremi2{font-size: 20px;
+.titulosobremi2{
+    font-size: 20px;
     font-weight: 450;
     text-decoration: underline;
 }
 
 /*tienda*/
-.titulotienda{font-size:35px;
-     font-weight: 500;
+.titulotienda{
+    font-size:35px;
+    font-weight: 500;
+    text-decoration: underline;
+    text-align: center;
+    padding: 20px;
     }
-.titulotalles{font-size:35px;
-     font-weight: 500;
+.titulotalles{
+    font-size:30px;
+    font-weight: 500;
+    text-align: center;   
+    text-decoration: underline;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     }
-
+.imagtalles{
+    width: 350px;
+    padding: 15px;
+    border-radius: 25%;
+    display: block;
+    
+}
+.contenedor-talles{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.grid-containertienda{    
+    display:grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(4,5fr);   
+    justify-content: center;
+    align-items:center;           
+    }    
+.grid-item-tienda{
+    justify-self: center;
+    align-self: center;   
+    text-align: center;
+    margin:15px;
+    }
+.imagtienda{
+    width:250px;
+    border: 5px solid beige;
+    border-radius:30%;  
+}
+.producto{
+    color:#686c5e;
+    font-size:25px;
+    text-decoration:underline;
+    font-style:normal;    
+    text-align: center;     
+}
+.precionuevo{
+    color:#686c5e;
+    font-size:20px;    
+    text-align: center;     
+}
+.precioviejo{
+    color:#686c5e;
+    font-size:15px;
+    text-decoration: line-through;
+    font-style: oblique;   
+    text-align: center;    
+}
 /*envios y cambios*/
 .tituloenviosycambios{font-size:35px;
      font-weight: 500;
@@ -239,8 +301,9 @@ main section h4 {font-size:20px ;
     bottom:10px;
 }
 
-/*Media queries celular*/
-@media (max-width:320px){
+/*Media queries celular y tablet*/
+@media (max-width:768px) 
+{
 
  main{
     background-color: aqua;
@@ -248,12 +311,14 @@ main section h4 {font-size:20px ;
  .imagindex {
     width:6rem;
     border: 10px solid beige;
-    border-radius:30%;       
+    border-radius:30%;     
+      
 }
 .grid-container{
     display: flex;
     flex-direction: column-reverse;
     flex-wrap: wrap;
+    
 }
 .texto-card-index{
     font-size: 2rem;
@@ -267,32 +332,20 @@ main section h4 {font-size:20px ;
 
 }
 .navbar-footer{
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-
-    
+    display:none;    
 }
 .walink{
     left:1,5rem;
-    bottom:5rem;
+    bottom: 3rem;
     position: fixed;
 }
 .iglink{
     position: fixed;
     left:1,5rem;
-    bottom:1rem;
-}
-.logo-footer{
-    display:block;
-
-    
-    
+    bottom:1,5rem;
 }
 .navbar{
-   display: block;
- 
-   
+   display: block; 
 
 }
 }

@@ -12,73 +12,131 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezadonotienda"> <!--header con nav bar, logo e imagen-->
+    <header class="encabezadonotienda encabezadoindex"> <!--header con nav bar, logo e imagen-->
         <nav>
-         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./sobremi.html">Sobre mí</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-            <li><a href="./enviosycambios.html">Envios y cambios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+         <ul class="navbar">
+            <li><a class="botonesnavbar" href="../index.html">Inicio</a></li>
+            <li><a class="botonesnavbar"href="./sobremi.html">Sobre mí</a></li>
+            <li><a class="botonesnavbar"href="./tienda.html">Tienda</a></li>
+            <li><a class="botonesnavbar"href="./enviosycambios.html">Envios y cambios</a></li>
+            <li><a class="botonesnavbar"href="./contacto.html">Contacto</a></li>
         </ul>   
         </nav>
         
         <!--LOGO-->
-        <img src="../assets/img/logo.jpg" alt="logo">
+        <img class="imagenlogo"src="../assets/img/logo.jpg" alt="logo">
         
     </header>
 
-    <main> <!--productos de la tienda, faltan agregar más, puse un botton de compra unicamente
+    <main> <!--puse un botton de compra unicamente
     porque todavia no vimos como hacer el link para compra-->
         <h1 class="titulotienda">PRODUCTOS</h1>
-        <section>
-            <img src="../assets/img/anilloA3.jpg" alt="anilloA3">
-            <p>Anillo A3</p>
-            <button>Comprar</button>
-        </section>
-        <section id=anillob3>
-            <img src="../assets/img/anilloB3.jpg" alt="anilloB3">
-            <P>Anillo B3</P>
-            <button>Comprar</button>
-        </section>
-        <section id="anilloj7">
-            <img src="../assets/img/anilloJ7.jpg" alt="anilloJ7">
-            <p>Anillo J7</p>
-            <button>Comprar</button>
-        </section>
-        <section>
-            <img src="../assets/img/arosD8.jpg" alt="arosD8">
-            <p>Aros D8</p>
-            <button>Comprar</button>
-        </section>
-        <section id="arosr6">
-            <img  src="../assets/img/arosR6.jpg" alt="arosR6">
-            <p>Aros R6</p>
-            <button>Comprar</button>
-        </section>
-                                                
-        <section>
+        <section class="grid-containertienda">
+            <div class=grid-item-tienda id="anilloA3">
+                <img class="imagtienda"src="../assets/img/anilloA3.jpg" alt="anilloA3">
+                <p class="producto">Anillo A3</p>
+                <p class="precioviejo">ANTES: $17800. </p>
+                <p class="precionuevo">AHORA: $16800.</p>
+                <button>Comprar</button>
+            </div>
+            <div class=grid-item-tienda id=anillob3>
+                <img class="imagtienda" src="../assets/img/anilloB3.jpg" alt="anilloB3">
+                <P class="producto">Anillo B3</P>
+                <p class="precioviejo">ANTES: $18500.</p>
+                <p class="precionuevo">AHORA: $16500.</p>
+                <button>Comprar</button>
+            </div>
+            <div class=grid-item-tienda id="anilloj7">
+                <img class="imagtienda" src="../assets/img/anilloJ7.jpg" alt="anilloJ7">
+                <p class="producto">Anillo J7</p>
+                <p class="precioviejo">ANTES: $15990. </p>
+                <p class="precionuevo">AHORA: $12990.</p>
+                <button>Comprar</button>
+            </div>
+            <div class=grid-item-tienda>
+                <img class="imagtienda" src="../assets/img/arosD8.jpg" alt="arosD8">
+                <p class="producto">Aros D8</p>
+                <p class="precioviejo">ANTES: $16990. </p>
+                <p class="precionuevo">AHORA: $15990.</p>
+                <button>Comprar</button>
+            </div>                
+            <div class=grid-item-tienda id="arosr6">
+                <img class="imagtienda" src="../assets/img/arosR6.jpg" alt="arosR6">
+                <p class="producto">Aros R6</p>
+                <p class="precioviejo"> ANTES: $17900.</p>
+                <p class="precionuevo">AHORA: $15900.</p>
+                <button>Comprar</button>
+            </div>       
+            <div class=grid-item-tienda>
+                <img class="imagtienda"src="../assets/img/anilloA5.jpg" alt="anilloa5">
+                <p class="producto">Anillo A5</p>
+                <p class="precioviejo">ANTES: $18990. </p>
+                <p class="precionuevo">AHORA: $16990.</p>
+                <button>Comprar</button>
+            </div>                 
+            <div class=grid-item-tienda>
+                <img class="imagtienda" src="../assets/img/anilloA8.jpg" alt="anilloa8">
+                <p class="producto">Anillo A8</p>
+                <p class="precioviejo">ANTES: $17500. </p>
+                <p class="precionuevo">AHORA: $13500.</p>
+                <button>Anillo A8</button>
+            </div>
+            <div class=grid-item-tienda>
+                <img class="imagtienda" src="../assets/img/anilloA9.jpg" alt="anilloa9">
+                <p class="producto">Anillo A9</p>
+                <p class="precioviejo">ANTES: $14300. </p>
+                <p class="precionuevo">AHORA: $12300.</p>
+                <button>Comprar</button>                    
+            </div>
+            <div class=grid-item-tienda>
+                <img class="imagtienda" src="../assets/img/anilloB2.jpg" alt="anillob2">
+                <p class="producto">Anillo B2</p>
+                <p class="precioviejo">ANTES: $19500. </p>
+                <p class="precionuevo">AHORA: $17500.</p>
+                <button>Comprar</button>
+            </div>
+            <div class=grid-item-tienda>
+                <img class="imagtienda" src="../assets/img/anilloC3.jpg" alt="anilloC3">              
+                <p class="producto">Anillo C3</p>  
+                <p class="precioviejo">ANTES: $17990. </p>
+                <p class="precionuevo">AHORA: $16990.</p>
+                <button>Comprar</button>
+            </div>
+        </section>                                              
+        
             <h2 class="titulotalles">¿CÓMO SE CUAL ES MI TALLE DE ANILLOS?</h2>
-            <img src="../assets/img/guiatalles.jpg" alt="guia talles">
+        <section class="contenedor-talles">
+            <div class="imagtalles">
+                <img class="imagtalles" src="../assets/img/guiatalles.jpg" alt="guia talles">
+            </div>            
         </section>
 
     </main>
-    <footer>
+    <footer  class="piedepagina">
         <!--logo-->
-               <img src="../assets/img/logo.jpg" alt="logo">
+        <section  class="piedepagina">
+            <img class="logo-footer"src="../assets/img/logo.jpg" alt="logo">
+        </section>
+              
            <!--menu-->
-           <ul>
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="./sobremi.html">Sobre mi</a></li>
-               <li><a href="./tienda.html">Tienda</a></li>
-               <li><a href="./enviosycambios.html">Envios y cambios</a></li>
-               <li><a href="./contacto.html">Contacto</a></li>
+           <ul class="navbar-footer">
+               <li><a class="botones-footer" href="../index.html">Inicio</a></li>
+               <li><a class="botones-footer"href="./sobremi.html">Sobre mi</a></li>
+               <li><a class="botones-footer"href="./tienda.html">Tienda</a></li>
+               <li><a class="botones-footer"href="./enviosycambios.html">Envios y cambios</a></li>
+               <li><a class="botones-footer"href="./contacto.html">Contacto</a></li>
            </ul>
            <!--menu para whatsapp e instagram-->
-           <ul>
-               <li><a href="https://wa.me/1122455439"target=_blank>Whatsapp</a></li>
-               <li><a href="https://www.instagram.com/jb___joyas/"target=_blank>Instagram</a></li>
-           </ul>
+        <section>
+            <section >
+                <a class="walink" href="https://wa.me/1122455439"target=_blank>
+                    <img class="walink" src="../assets/img/iconowhatsapp.png" alt="iconowhatsapp">
+                </a>
+                <a class="iglink" href="https://www.instagram.com/jb___joyas/"target=_blank>
+                    <img class="iglink"src="../assets/img/iconoinstagram.png" alt="iconowhatsapp">
+                </a>
+            </section>
+        </section>
     </footer>
 </body>
 </html>

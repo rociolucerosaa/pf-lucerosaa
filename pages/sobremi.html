@@ -12,19 +12,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="encabezadonotienda"> <!--header con nav bar, logo e imagen-->
+    <header class="encabezadonotienda encabezadoindex"> <!--header con nav bar, logo e imagen-->
         <nav>
-         <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./sobremi.html">Sobre mí</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-            <li><a href="./enviosycambios.html">Envios y cambios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+         <ul class="navbar">
+            <li><a class="botonesnavbar" href="../index.html">Inicio</a></li>
+            <li><a class="botonesnavbar" href="./sobremi.html">Sobre mí</a></li>
+            <li><a class="botonesnavbar" href="./tienda.html">Tienda</a></li>
+            <li><a class="botonesnavbar"href="./enviosycambios.html">Envios y cambios</a></li>
+            <li><a class="botonesnavbar" href="./contacto.html">Contacto</a></li>
         </ul>   
         </nav>
         
         <!--LOGO-->
-        <img src="../assets/img/logo.jpg" alt="logo">
+        <img class="imagenlogo"src="../assets/img/logo.jpg" alt="logo">
                 
     </header>
     <main>
@@ -76,22 +76,28 @@
         </section>
 
     </main>
-    <footer>
+    <footer class="piedepagina">
         <!--logo-->
-               <img src="../assets/img/logo.jpg" alt="">
+        <section class="piedepagina">
+            <img class="logo-footer" src="../assets/img/logo.jpg" alt="logo">
+        </section>               
            <!--menu-->
-           <ul>
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="./sobremi.html">Sobre mi</a></li>
-               <li><a href="./tienda.html">Tienda</a></li>
-               <li><a href="./enviosycambios.html">Envios y cambios</a></li>
-               <li><a href="./contacto.html">Contacto</a></li>
+           <ul class="navbar-footer">
+               <li><a class="botones-footer"href="../index.html">Inicio</a></li>
+               <li><a class="botones-footer"href="./sobremi.html">Sobre mi</a></li>
+               <li><a class="botones-footer"href="./tienda.html">Tienda</a></li>
+               <li><a class="botones-footer"href="./enviosycambios.html">Envios y cambios</a></li>
+               <li><a class="botones-footer"href="./contacto.html">Contacto</a></li>
            </ul>
            <!--menu para whatsapp e instagram-->
-           <ul>
-               <li><a href="https://wa.me/1122455439"target=_blank>Whatsapp</a></li>
-               <li><a href="https://www.instagram.com/jb___joyas/"target=_blank>Instagram</a></li>
-           </ul>
+        <section>
+            <a class="walink" href="https://wa.me/1122455439"target=_blank>
+                <img class="walink" src="../assets/img/iconowhatsapp.png" alt="iconowhatsapp">
+            </a>
+            <a class="iglink" href="https://www.instagram.com/jb___joyas/"target=_blank>
+                <img class="iglink"src="../assets/img/iconoinstagram.png" alt="iconowhatsapp">
+            </a>
+        </section>
     </footer>
     
 </body>
