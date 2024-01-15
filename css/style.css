@@ -6,6 +6,7 @@
     margin: 0%;
     padding: 0%;
 }
+
 /*fondos*/
 main{background-color: #eae6ca;}
 footer{background-color: #d9d99b;}
@@ -19,6 +20,7 @@ main{
 }
 footer{
     color:#3f3f3f;
+  
 }
 
 /*le saco los puntitos a las listas del header y footer*/
@@ -79,31 +81,24 @@ footer img {width: 80px;}
     font-weight: 500;
     text-align: center;
     text-decoration:underline;
-    padding: 25px;
-        
+    padding: 25px;       
 }
-
 .imagindex {
     width:250px;
     border: 10px solid beige;
-    border-radius:30%;       
-      
-   }   
-        
+    border-radius:30%;     
+}          
 .grid-container{    
     display:grid;
     grid-template-rows: repeat(1,1fr);
     grid-template-columns: repeat(3,5fr);   
     justify-content: center;
-    align-items:center;
-   
+    align-items:center;   
 }
-
 .grid-item{
     justify-self: center;
     align-self: center;   
 }
-
 .texto-card-index{
     color:#686c5e;
     font-size:25px;
@@ -111,13 +106,11 @@ footer img {width: 80px;}
     font-style:normal;    
     text-align: center;     
 }
-
 .texto-card-indexdos{
     color:#686c5e;
     font-size:20px;    
     text-align: center;     
 }
-
 .texto-tachado{
     color:#686c5e;
     font-size:15px;
@@ -125,23 +118,51 @@ footer img {width: 80px;}
     font-style: oblique;   
     text-align: center;    
 }
-
 /*sobremi*/
 .titulosobremi{
     font-size:35px;
     font-weight: 50
 }
-
-.imagensobremi {
-    width:400px;
-}
-
 .titulosobremi2{
     font-size: 20px;
     font-weight: 450;
     text-decoration: underline;
+    text-align: left;
+    padding-top: 25px;
+    padding-left:30px ;   
 }
-
+#carouselExample{
+    max-width: 600px;
+    margin: auto;    
+}
+.carousel-item-img{
+    width: 100%; 
+    height: auto; 
+  }
+.carousel{
+    padding: 15px;    
+}
+.textosobremi{
+    font-size:16px ;
+    text-align:left;
+    padding: 30px;
+}
+.titulosobremi{
+    font-size: 35px;
+    text-align: center;
+    text-decoration: underline;
+    font-style: oblique;
+    padding: 35px; 
+}
+.formulario{
+    font-size: 15px;
+    font-weight: 450;
+    text-decoration: underline;
+    text-align: left;
+    padding-top: 25px;
+    padding-left:30px ;
+    padding-bottom: 25px;    
+}
 /*tienda*/
 .titulotienda{
     font-size:35px;
@@ -149,7 +170,7 @@ footer img {width: 80px;}
     text-decoration: underline;
     text-align: center;
     padding: 20px;
-    }
+}
 .titulotalles{
     font-size:30px;
     font-weight: 500;
@@ -159,7 +180,7 @@ footer img {width: 80px;}
     display: flex;
     justify-content: center;
     align-items: center;
-    }
+}
 .imagtalles{
     width: 350px;
     padding: 15px;
@@ -180,13 +201,13 @@ footer img {width: 80px;}
     grid-template-columns: repeat(4,5fr);   
     justify-content: center;
     align-items:center;           
-    }    
+}    
 .grid-item-tienda{
     justify-self: center;
     align-self: center;   
     text-align: center;
     margin:15px;
-    }
+}
 .imagtienda{
     width:250px;
     border: 5px solid beige;
@@ -212,40 +233,53 @@ footer img {width: 80px;}
     text-align: center;    
 }
 /*envios y cambios*/
-.tituloenviosycambios{font-size:35px;
-     font-weight: 500;
-    }
-
+.tituloenviosycambios{
+    font-size:30px;
+    font-weight: 900;
+    text-decoration: underline;
+    text-align: center;
+    padding: 35px;
+ }
+.subtituloenvios{
+    font-size:15px;
+    font-weight: 800;
+    text-decoration:underline;
+    text-align:left;
+    padding: 25px;
+    font-style:oblique;
+ }
+.contenidoenvios{
+    font-size:15px;
+    font-weight: 500;   
+    padding: 15px;     
+}
+.enviosycambios{
+    padding:20px;
+}
 /*contacto*/
 .titulocontacto{font-size:35px;
     font-weight: 500;
  }
-
 .titulodonde{font-size:35px; 
     font-weight: 500;
     font-style: oblique;
 }
-
 .mapita{
     width:400px;
 }
-
 .tituloform{
     font-size:25px; 
     font-weight: 500;
 }
-
 main section h4 {font-size:20px ;
     text-decoration: underline ;
 }
-
 /*imagenes encabezados menos el de index que es otra*/
 .encabezadonotienda {
     background-image: url('../assets/img/manos.jpg');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
 }
 /* FOOTERS */
 .piedepagina{
@@ -254,8 +288,7 @@ main section h4 {font-size:20px ;
     align-content: center;
     justify-content: space-between;
     flex-wrap: wrap;
-    flex-direction: row-reverse;   
-
+    flex-direction: row-reverse;      
 }
 .logo-footer{
     width: 35px;
@@ -270,8 +303,7 @@ main section h4 {font-size:20px ;
     border-radius: 10px;     
     position: relative;
     left:500px;
-    top:20px;
-     
+    top:20px;     
 }
 .botones-footer{
     color: #e2e0c8 ;
@@ -286,21 +318,18 @@ main section h4 {font-size:20px ;
     display:flex;    
     border: 1px solid white;
 }  
-
 .walink{
     width: 35px;
     position:fixed;
     left:15px;
     bottom:50px;
 }
-
 .iglink{
     width: 35px;
     position:fixed;
     left:15px;
     bottom:10px;
 }
-
 /*Media queries celular y tablet*/
 @media (max-width:768px) 
 {

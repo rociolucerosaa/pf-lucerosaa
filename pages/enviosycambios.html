@@ -30,16 +30,19 @@
     </header>
     <main>
         <section>
-            <h1 class="tituloenviosycambios">ENVÍOS Y CAMBIOS</h1>
-                <h3>ENVÍOS</h3>
-                    <p>
+            <div>
+                <h1 class="tituloenviosycambios">ENVÍOS Y CAMBIOS</h1>
+            </div>
+            <div class="enviosycambios">
+                <h3 class="subtituloenvios">ENVÍOS</h3>
+                    <p class="contenidoenvios">
                     REALIZAMOS ENVÍOS A TODO EL PAÍS a través
                     de OCA o Correo Argentino a domicilio o sucursal. 
                     Envíos en CABA por mensajería a domicilio
                     (entre 1 y 2 días hábiles)
                     </p>
-                <h3>¿CUÁL ES EL COSTO DE ENVÍO Y A CARGO DE QUIÉN?</h3>
-                    <p>
+                <h3 class="subtituloenvios">¿CUÁL ES EL COSTO DE ENVÍO Y A CARGO DE QUIÉN?</h3>
+                    <p class="contenidoenvios">
                     El costo de envío depende de la ubicación que 
                     hayas seleccionado. Es a cargo del cliente al
                     menos que el producto indique lo contrario en 
@@ -47,14 +50,14 @@
                     valor del costo de envío en el checkout 
                     colocando tu código postal al momento del pago. 
                     </p>
-               <h3>¿DÓNDE PUEDO RECIBIR MI PEDIDO?</h3>
-                    <ul>
-                        <li>Podés recibirlo en tu domicilio.</li>
-                        <li>Podés retirarlo por una sucursal OCA o Correo Argentino. </li>
-                        <li>O lo podés retirar en nuestro local de manera gratuita.</li>
-                    </ul>
-                <h3>¿CÓMO FUNCIONA NUESTRO MÉTODO DE ENVÍO PUERTA A PUERTA? </h3>
-                    <p>
+               <h3 class="subtituloenvios">¿DÓNDE PUEDO RECIBIR MI PEDIDO?</h3>
+                    <p class="contenidoenvios">
+                    Podés recibirlo en tu domicilio. <br>
+                    Podés retirarlo por una sucursal OCA o Correo Argentino. <br>
+                    O lo podés retirar en nuestro local de manera gratuita.
+                    </p>             
+                <h3 class="subtituloenvios">¿CÓMO FUNCIONA NUESTRO MÉTODO DE ENVÍO PUERTA A PUERTA? </h3>
+                    <p class="contenidoenvios">
                     El tiempo de entrega de:
                     - CABA por mensajería (1 a 2 días hábiles)
                     - Envíos al interior del país, por Correo Argentino
@@ -65,8 +68,8 @@
                     abonar nuevamente el costo de mensajería. La marca no
                     se hará cargo de un segundo envío.
                     </p>
-                <h3>¿TIENEN CAMBIO TODOS LOS PRODUCTOS?</h3>
-                    <p>
+                <h3 class="subtituloenvios">¿TIENEN CAMBIO TODOS LOS PRODUCTOS?</h3>
+                    <p class="contenidoenvios"> 
                     Síiii! Tenés 30 días para realizar el cambio después de 
                     haber hecho la compra.
                     Para los prouctos de temporada que se compraron con
@@ -79,33 +82,44 @@
                     recibo de compra, factura, o talón de cambio.
                     Los aros NO tienen cambio ni devolución. 
                     </p>
-                <h3>¿DÓNDE PUEDO REALIZAR EL CAMBIO?</h3>
-                   <p>
+                <h3 class="subtituloenvios">¿DÓNDE PUEDO REALIZAR EL CAMBIO?</h3>
+                   <p class="contenidoenvios">
                     Podés realizar el cambio directamente por nuestro local 
                     (Luis saenz peña 1639, Martinez,BS.AS de 12 a 19h).
                     En el caso de ser con envío, se puede hacer por correo o mensajería, el costo queda a 
                     cargo del cliente, en ese caso comunicate con nosotros
                     por WhatsApp : 1122455439 o via mail : consultas@gmail.com 
                    </p>
+            </div>
+                
         </section>
 
     </main>
-    <footer>
+    <footer  class="piedepagina">
         <!--logo-->
-               <img src="../assets/img/logo.jpg" alt="logo">
+        <section  class="piedepagina">
+            <img class="logo-footer"src="../assets/img/logo.jpg" alt="logo">
+        </section>
+              
            <!--menu-->
-           <ul>
-               <li><a href="../index.html">Inicio</a></li>
-               <li><a href="./sobremi.html">Sobre mi</a></li>
-               <li><a href="./tienda.html">Tienda</a></li>
-               <li><a href="./enviosycambios.html">Envíos y cambios</a></li>
-               <li><a href="./contacto.html">Contacto</a></li>
+           <ul class="navbar-footer">
+               <li><a class="botones-footer" href="../index.html">Inicio</a></li>
+               <li><a class="botones-footer"href="./sobremi.html">Sobre mi</a></li>
+               <li><a class="botones-footer"href="./tienda.html">Tienda</a></li>
+               <li><a class="botones-footer"href="./enviosycambios.html">Envios y cambios</a></li>
+               <li><a class="botones-footer"href="./contacto.html">Contacto</a></li>
            </ul>
            <!--menu para whatsapp e instagram-->
-           <ul>
-               <li><a href="https://wa.me/1122455439"target=_blank>Whatsapp</a></li>
-               <li><a href="https://www.instagram.com/jb___joyas/"target=_blank>Instagram</a></li>
-           </ul>
+        <section>
+            <section >
+                <a class="walink" href="https://wa.me/1122455439"target=_blank>
+                    <img class="walink" src="../assets/img/iconowhatsapp.png" alt="iconowhatsapp">
+                </a>
+                <a class="iglink" href="https://www.instagram.com/jb___joyas/"target=_blank>
+                    <img class="iglink"src="../assets/img/iconoinstagram.png" alt="iconowhatsapp">
+                </a>
+            </section>
+        </section>
     </footer>
 </body>
 </html>
