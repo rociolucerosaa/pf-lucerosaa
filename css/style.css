@@ -45,13 +45,11 @@ footer img {width: 80px;}
     flex-wrap: wrap;
     flex-direction: column;  
 }
-
 .navbar{    
     display:flex;    
     border-radius: 10px;    
     margin: 10px;       
 }
-
 .imagenlogo {
   padding: 25px;
   border-radius: 80px;
@@ -59,7 +57,6 @@ footer img {width: 80px;}
   display: flex;
   order: -1;
 }
-
 .botonesnavbar{
     color: #e2e0c8 ;
     font-size: 15px;
@@ -72,8 +69,7 @@ footer img {width: 80px;}
     margin: 20px;
     display:flex;     
     border:1px solid white;
-  }
-
+}
 /*INDEX*/
 .tituloindex{
     color:#aeae6f;
@@ -156,7 +152,7 @@ footer img {width: 80px;}
 }
 .formulario{
     font-size: 15px;
-    font-weight: 450;
+    font-weight: 550;
     text-decoration: underline;
     text-align: left;
     padding-top: 25px;
@@ -185,8 +181,7 @@ footer img {width: 80px;}
     width: 350px;
     padding: 15px;
     border-radius: 25%;
-    display: block;
-    
+    display: block;    
 }
 .contenedor-talles{
     display: flex;
@@ -257,23 +252,42 @@ footer img {width: 80px;}
     padding:20px;
 }
 /*contacto*/
-.titulocontacto{font-size:35px;
+.titulocontacto{
+    font-size:35px;
     font-weight: 500;
+    text-decoration: underline;
+    margin:10px;
  }
-.titulodonde{font-size:35px; 
+.titulodonde{
+    font-size:35px; 
     font-weight: 500;
     font-style: oblique;
+    text-decoration: underline;
+    margin:10px;
 }
 .mapita{
     width:400px;
+    border-radius: 10px;
 }
 .tituloform{
     font-size:25px; 
     font-weight: 500;
+    text-decoration: underline;
+    margin:10px;
 }
-main section h4 {font-size:20px ;
-    text-decoration: underline ;
+.grid-containercontacto{
+    display:grid;
+    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);   
+    justify-content: center;
+    align-items:center;
 }
+.grid-itemcontacto{
+    justify-self: center;
+    align-self: center;      
+    margin:15px;
+}
+
 /*imagenes encabezados menos el de index que es otra*/
 .encabezadonotienda {
     background-image: url('../assets/img/manos.jpg');
@@ -334,31 +348,24 @@ main section h4 {font-size:20px ;
 @media (max-width:768px) 
 {
 
- main{
-    background-color: aqua;
- }
  .imagindex {
     width:6rem;
     border: 10px solid beige;
-    border-radius:30%;     
-      
+    border-radius:30%;           
 }
 .grid-container{
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap;    
 }
 .texto-card-index{
     font-size: 2rem;
 }
 .texto-card-indexdos {
     font-size: 1.5rem;
-
 }
 .texto-tachado{
     font-size: 0.5rem;
-
 }
 .navbar-footer{
     display:none;    
@@ -375,6 +382,10 @@ main section h4 {font-size:20px ;
 }
 .navbar{
    display: block; 
-
+}
+.grid-containertienda{
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;   
 }
 }
