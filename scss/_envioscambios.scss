@@ -1,0 +1,30 @@
+section{
+        .enviosycambios{
+        padding:20px;
+    }
+    div{
+        .tituloenviosycambios{
+         @extend .titulosobremi;
+         }      
+        }
+     div{
+        .subtituloenvios{
+            font-size:15px;
+            font-weight: 800;
+            text-decoration:underline;
+            text-align:left;
+            padding: 25px;
+            font-style:oblique;
+         }
+         .contenidoenvios{
+            font-size:15px;
+            font-weight:500;   
+            padding: 15px;     
+            }    
+     }        
+}
+
+
+
+
+

@@ -1,0 +1,61 @@
+main{
+    .grid-container{
+        display:grid;
+        grid-template-rows: repeat(1,1fr);
+        grid-template-columns: repeat(3,5fr);   
+        justify-content: center;
+        align-items:center;
+    }
+    .imagindex {
+        width:250px;
+        border: 10px solid beige;
+        border-radius:30%;     
+    }          
+    div{    
+        .tituloindex{
+            color:#aeae6f;
+            font-size:35px; 
+            font-weight: 500;
+            text-align: center;
+            text-decoration:underline;
+            padding: 25px;       
+    }
+      
+    }
+    section{
+        .grid-item{
+            justify-self: center;
+            align-self: center;   
+        }    
+    
+        }
+    
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  

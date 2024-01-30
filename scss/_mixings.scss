@@ -1,0 +1,27 @@
+//mixings textos index
+
+@mixin estilos-de-textoindex($color, $size, $decoration, $style, $align) {
+    color: $color;
+    font-size: $size;
+    text-decoration: $decoration;
+    font-style: $style;
+    text-align: $align;
+  }
+  
+.texto-card-index {
+    @include estilos-de-textoindex(#686c5e, 25px, underline, normal, center);
+  }
+
+
+.texto-card-indexdos {
+    @include estilos-de-textoindex(#686c5e, 20px, none, normal, center);
+  }
+
+
+.texto-tachado {
+    @include estilos-de-textoindex(#686c5e, 15px, line-through, oblique, center);
+  }
+
+  
+
+  

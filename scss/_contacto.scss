@@ -1,0 +1,53 @@
+main{
+    .grid-containercontacto{
+        display:grid;
+        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(2,1fr);   
+        justify-content: center;
+        align-items:center;
+    }
+    section{
+        .grid-itemcontacto{
+            justify-self: center;
+            align-self: center;      
+            margin:15px;
+        }
+        div{
+            .titulocontacto{
+                font-size:35px;
+                font-weight: 500;
+                text-decoration: underline;
+                margin:10px;
+             }
+        }
+        div{    
+            .titulodonde{
+                font-size:35px; 
+                font-weight: 500;
+                font-style: oblique;
+                text-decoration: underline;
+                margin:10px;
+                            }
+            .mapita{
+            width:400px;
+            border-radius: 10px;
+                            }
+        }
+        div{
+            .tituloform{
+                font-size:25px; 
+                font-weight: 500;
+                text-decoration: underline;
+                margin:10px;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+

@@ -1,391 +1,392 @@
-
-/*reset*/
-*{font-family: 'Roboto', sans-serif;
-}
-*{
-    margin: 0%;
-    padding: 0%;
+* {
+  margin: 0%;
+  padding: 0%;
 }
 
-/*fondos*/
-main{background-color: #eae6ca;}
-footer{background-color: #d9d99b;}
-
-/*colores texto*/
-header{
-    color:#3f3f3f;}
-    
-main{
-    color:#3f3f3f;
-}
-footer{
-    color:#3f3f3f;
-  
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-/*le saco los puntitos a las listas del header y footer*/
-body header nav ul li {list-style-type:none ;}
-body footer ul li{list-style-type: none;}
-
-/*  header y footer tamaño logo*/
-header img {width: 100px;}
-footer img {width: 80px;}
-
-/*HEADERS*/
-.encabezadoindex {
-    display: flex;
-    background-image: url('../assets/img/collaranilloo.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-position-y:bottom;
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: column;  
+header {
+  color: #3f3f3f;
 }
-.navbar{    
-    display:flex;    
-    border-radius: 10px;    
-    margin: 10px;       
+
+main {
+  color: #3f3f3f;
 }
-.imagenlogo {
+
+footer {
+  color: #3f3f3f;
+}
+
+header {
+  background-image: url("../assets/img/manos.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+header nav ul {
+  display: flex;
+  border-radius: 10px;
+  margin: 10px;
+}
+header nav li {
+  list-style-type: none;
+}
+header nav li a {
+  color: #e2e0c8;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #686c5e;
+  text-align: center;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 20px;
+  display: flex;
+  border: 1px solid white;
+}
+header img {
+  width: 65px;
   padding: 25px;
+  border-radius: 80px;
+  margin: 15px;
+  display: flex;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+  background-color: #d9d99b;
+}
+footer section img {
+  width: 45px;
+  padding: 15px;
   border-radius: 80px;
   margin: 15px;
   display: flex;
   order: -1;
 }
-.botonesnavbar{
-    color: #e2e0c8 ;
-    font-size: 15px;
-    text-decoration:none;
-    background-color: #686c5e;
-    text-align: center;
-    font-weight: bold;
-    padding: 5px;
-    border-radius: 5px;
-    margin: 20px;
-    display:flex;     
-    border:1px solid white;
+footer section ul {
+  display: flex;
+  border-radius: 10px;
 }
-/*INDEX*/
-.tituloindex{
-    color:#aeae6f;
-    font-size:35px; 
-    font-weight: 500;
-    text-align: center;
-    text-decoration:underline;
-    padding: 25px;       
+footer section ul li {
+  list-style-type: none;
 }
-.imagindex {
-    width:250px;
+footer section ul li .botones-footer {
+  color: #e2e0c8;
+  font-size: 15px;
+  text-decoration: none;
+  background-color: #686c5e;
+  text-align: center;
+  font-weight: bold;
+  padding: 6px;
+  border-radius: 5px;
+  margin: 2px;
+  display: flex;
+  border: 1px solid white;
+}
+footer section a .walink {
+  width: 27px;
+  position: fixed;
+  left: 10px;
+  bottom: 40px;
+}
+footer section a .iglink {
+  width: 27px;
+  position: fixed;
+  left: 10px;
+  bottom: 1px;
+}
+
+@media (max-width: 768px) {
+  .imagindex {
+    width: 6rem;
     border: 10px solid beige;
-    border-radius:30%;     
-}          
-.grid-container{    
-    display:grid;
-    grid-template-rows: repeat(1,1fr);
-    grid-template-columns: repeat(3,5fr);   
-    justify-content: center;
-    align-items:center;   
-}
-.grid-item{
-    justify-self: center;
-    align-self: center;   
-}
-.texto-card-index{
-    color:#686c5e;
-    font-size:25px;
-    text-decoration:underline;
-    font-style:normal;    
-    text-align: center;     
-}
-.texto-card-indexdos{
-    color:#686c5e;
-    font-size:20px;    
-    text-align: center;     
-}
-.texto-tachado{
-    color:#686c5e;
-    font-size:15px;
-    text-decoration: line-through;
-    font-style: oblique;   
-    text-align: center;    
-}
-/*sobremi*/
-.titulosobremi{
-    font-size:35px;
-    font-weight: 50
-}
-.titulosobremi2{
-    font-size: 20px;
-    font-weight: 450;
-    text-decoration: underline;
-    text-align: left;
-    padding-top: 25px;
-    padding-left:30px ;   
-}
-#carouselExample{
-    max-width: 600px;
-    margin: auto;    
-}
-.carousel-item-img{
-    width: 100%; 
-    height: auto; 
+    border-radius: 30%;
   }
-.carousel{
-    padding: 15px;    
-}
-.textosobremi{
-    font-size:16px ;
-    text-align:left;
-    padding: 30px;
-}
-.titulosobremi{
-    font-size: 35px;
-    text-align: center;
-    text-decoration: underline;
-    font-style: oblique;
-    padding: 35px; 
-}
-.formulario{
-    font-size: 15px;
-    font-weight: 550;
-    text-decoration: underline;
-    text-align: left;
-    padding-top: 25px;
-    padding-left:30px ;
-    padding-bottom: 25px;    
-}
-/*tienda*/
-.titulotienda{
-    font-size:35px;
-    font-weight: 500;
-    text-decoration: underline;
-    text-align: center;
-    padding: 20px;
-}
-.titulotalles{
-    font-size:30px;
-    font-weight: 500;
-    text-align: center;   
-    text-decoration: underline;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.imagtalles{
-    width: 350px;
-    padding: 15px;
-    border-radius: 25%;
-    display: block;    
-}
-.contenedor-talles{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: row;
-}
-.grid-containertienda{    
-    display:grid;
-    grid-template-rows: repeat(3,1fr);
-    grid-template-columns: repeat(4,5fr);   
-    justify-content: center;
-    align-items:center;           
-}    
-.grid-item-tienda{
-    justify-self: center;
-    align-self: center;   
-    text-align: center;
-    margin:15px;
-}
-.imagtienda{
-    width:250px;
-    border: 5px solid beige;
-    border-radius:30%;  
-}
-.producto{
-    color:#686c5e;
-    font-size:25px;
-    text-decoration:underline;
-    font-style:normal;    
-    text-align: center;     
-}
-.precionuevo{
-    color:#686c5e;
-    font-size:20px;    
-    text-align: center;     
-}
-.precioviejo{
-    color:#686c5e;
-    font-size:15px;
-    text-decoration: line-through;
-    font-style: oblique;   
-    text-align: center;    
-}
-/*envios y cambios*/
-.tituloenviosycambios{
-    font-size:30px;
-    font-weight: 900;
-    text-decoration: underline;
-    text-align: center;
-    padding: 35px;
- }
-.subtituloenvios{
-    font-size:15px;
-    font-weight: 800;
-    text-decoration:underline;
-    text-align:left;
-    padding: 25px;
-    font-style:oblique;
- }
-.contenidoenvios{
-    font-size:15px;
-    font-weight: 500;   
-    padding: 15px;     
-}
-.enviosycambios{
-    padding:20px;
-}
-/*contacto*/
-.titulocontacto{
-    font-size:35px;
-    font-weight: 500;
-    text-decoration: underline;
-    margin:10px;
- }
-.titulodonde{
-    font-size:35px; 
-    font-weight: 500;
-    font-style: oblique;
-    text-decoration: underline;
-    margin:10px;
-}
-.mapita{
-    width:400px;
-    border-radius: 10px;
-}
-.tituloform{
-    font-size:25px; 
-    font-weight: 500;
-    text-decoration: underline;
-    margin:10px;
-}
-.grid-containercontacto{
-    display:grid;
-    grid-template-rows: repeat(2,1fr);
-    grid-template-columns: repeat(2,1fr);   
-    justify-content: center;
-    align-items:center;
-}
-.grid-itemcontacto{
-    justify-self: center;
-    align-self: center;      
-    margin:15px;
-}
-
-/*imagenes encabezados menos el de index que es otra*/
-.encabezadonotienda {
-    background-image: url('../assets/img/manos.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-}
-/* FOOTERS */
-.piedepagina{
-    display: flex;    
-    align-items: center;
-    align-content: center;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;      
-}
-.logo-footer{
-    width: 35px;
-    padding: 15px;
-    border-radius: 80px;
-    margin: 15px;
-    display: flex;
-    order: -1;
-}
-.navbar-footer{    
-    display:flex;    
-    border-radius: 10px;     
-    position: relative;
-    left:500px;
-    top:20px;     
-}
-.botones-footer{
-    color: #e2e0c8 ;
-    font-size: 15px;
-    text-decoration:none;
-    background-color: #686c5e;
-    text-align: center;
-    font-weight: bold;
-    padding: 6px;
-    border-radius: 5px;
-    margin: 2px;
-    display:flex;    
-    border: 1px solid white;
-}  
-.walink{
-    width: 35px;
-    position:fixed;
-    left:15px;
-    bottom:50px;
-}
-.iglink{
-    width: 35px;
-    position:fixed;
-    left:15px;
-    bottom:10px;
-}
-/*Media queries celular y tablet*/
-@media (max-width:768px) 
-{
-
- .imagindex {
-    width:6rem;
-    border: 10px solid beige;
-    border-radius:30%;           
-}
-.grid-container{
+  .grid-container {
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;    
-}
-.texto-card-index{
+    flex-wrap: wrap;
+  }
+  .texto-card-index {
     font-size: 2rem;
-}
-.texto-card-indexdos {
+  }
+  .texto-card-indexdos {
     font-size: 1.5rem;
-}
-.texto-tachado{
+  }
+  .texto-tachado {
     font-size: 0.5rem;
-}
-.navbar-footer{
-    display:none;    
-}
-.walink{
-    left:1,5rem;
+  }
+  .navbar-footer {
+    display: none;
+  }
+  .walink {
+    left: 1, 5rem;
     bottom: 3rem;
     position: fixed;
-}
-.iglink{
+  }
+  .iglink {
     position: fixed;
-    left:1,5rem;
-    bottom:1,5rem;
-}
-.navbar{
-   display: block; 
-}
-.grid-containertienda{
+    left: 1, 5rem;
+    bottom: 1, 5rem;
+  }
+  .navbar {
+    display: block;
+  }
+  .grid-containertienda {
     display: flex;
     flex-direction: column-reverse;
-    flex-wrap: wrap;   
+    flex-wrap: wrap;
+  }
 }
+main .carousel {
+  padding: 15px;
 }
+main section #carouselExample {
+  max-width: 600px;
+  margin: auto;
+}
+main section div .carousel-item-img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+main .grid-container {
+  display: grid;
+  grid-template-rows: repeat(1, 1fr);
+  grid-template-columns: repeat(3, 5fr);
+  justify-content: center;
+  align-items: center;
+}
+main .imagindex {
+  width: 250px;
+  border: 10px solid beige;
+  border-radius: 30%;
+}
+main div .tituloindex {
+  color: #aeae6f;
+  font-size: 35px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  padding: 25px;
+}
+main section .grid-item {
+  justify-self: center;
+  align-self: center;
+}
+
+section .titulosobremi, section div .tituloenviosycambios {
+  font-size: 35px;
+  font-weight: 50;
+  text-align: center;
+  text-decoration: underline;
+  font-style: oblique;
+  padding: 35px;
+}
+section .textosobremi {
+  font-size: 16px;
+  text-align: left;
+  padding: 30px;
+}
+
+section .titulosobremi2 {
+  font-size: 20px;
+  font-weight: 450;
+  text-decoration: underline;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+section .textosobremi {
+  font-size: 16px;
+  text-align: left;
+  padding: 30px;
+}
+
+section .formulario {
+  font-size: 15px;
+  font-weight: 550;
+  text-decoration: underline;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 30px;
+  padding-bottom: 25px;
+}
+section div .titulosobremi2 {
+  font-size: 20px;
+  font-weight: 450;
+  text-decoration: underline;
+  text-align: left;
+  padding-top: 25px;
+  padding-left: 30px;
+}
+
+main .titulotienda {
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: underline;
+  text-align: center;
+  padding: 20px;
+}
+main .grid-containertienda {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 5fr);
+  justify-content: center;
+  align-items: center;
+}
+main section .grid-item-tienda {
+  justify-self: center;
+  align-self: center;
+  text-align: center;
+  margin: 15px;
+}
+main section div .imagtienda {
+  width: 250px;
+  border: 5px solid beige;
+  border-radius: 30%;
+}
+main section div .producto {
+  color: #686c5e;
+  font-size: 25px;
+  text-decoration: underline;
+  font-style: normal;
+  text-align: center;
+}
+main section div .precionuevo {
+  color: #686c5e;
+  font-size: 20px;
+  text-align: center;
+}
+main section div .precioviejo {
+  color: #686c5e;
+  font-size: 15px;
+  text-decoration: line-through;
+  font-style: oblique;
+  text-align: center;
+}
+main section .titulotalles {
+  font-size: 30px;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: underline;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+main section .contenedor-talles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+main section div .imagtalles {
+  width: 350px;
+  padding: 15px;
+  border-radius: 25%;
+  display: block;
+}
+
+section .enviosycambios {
+  padding: 20px;
+}
+section div .subtituloenvios {
+  font-size: 15px;
+  font-weight: 800;
+  text-decoration: underline;
+  text-align: left;
+  padding: 25px;
+  font-style: oblique;
+}
+section div .contenidoenvios {
+  font-size: 15px;
+  font-weight: 500;
+  padding: 15px;
+}
+
+main .grid-containercontacto {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+}
+main section .grid-itemcontacto {
+  justify-self: center;
+  align-self: center;
+  margin: 15px;
+}
+main section div .titulocontacto {
+  font-size: 35px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 10px;
+}
+main section div .titulodonde {
+  font-size: 35px;
+  font-weight: 500;
+  font-style: oblique;
+  text-decoration: underline;
+  margin: 10px;
+}
+main section div .mapita {
+  width: 400px;
+  border-radius: 10px;
+}
+main section div .tituloform {
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: underline;
+  margin: 10px;
+}
+
+main {
+  background-color: #eae6ca;
+}
+
+footer {
+  background-color: #d9d99b;
+}
+
+.texto-card-index {
+  color: #686c5e;
+  font-size: 25px;
+  text-decoration: underline;
+  font-style: normal;
+  text-align: center;
+}
+
+.texto-card-indexdos {
+  color: #686c5e;
+  font-size: 20px;
+  text-decoration: none;
+  font-style: normal;
+  text-align: center;
+}
+
+.texto-tachado {
+  color: #686c5e;
+  font-size: 15px;
+  text-decoration: line-through;
+  font-style: oblique;
+  text-align: center;
+}
+
+/*# sourceMappingURL=style.css.map */

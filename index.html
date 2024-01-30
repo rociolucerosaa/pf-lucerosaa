@@ -10,48 +10,60 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
-<body>    
-    <header class="encabezadoindex"> <!--header con nav bar, logo e imagen-->
-<nav >
- <ul class="navbar"> 
-    <li><a class="botonesnavbar"href="./index.html">Inicio</a></li>
-    <li><a class="botonesnavbar"href="./pages/sobremi.html">Sobre mí</a></li>
-    <li><a class="botonesnavbar"href="./pages/tienda.html">Tienda</a></li>
-    <li><a class="botonesnavbar"href="./pages/enviosycambios.html">EnvÍos y cambios</a></li>
-    <li><a class="botonesnavbar"href="./pages/contacto.html">Contacto</a></li>
-</ul>   
-</nav>
+<body>   
+<!--header con nav bar, logo e imagen--> 
+    <header > 
+        <nav >
+            <ul > 
+                <li><a href="./index.html">Inicio</a></li>
+                <li><a href="./pages/sobremi.html">Sobre mí</a></li>
+                <li><a href="./pages/tienda.html">Tienda</a></li>
+                <li><a href="./pages/enviosycambios.html">EnvÍos y cambios</a></li>
+                <li><a href="./pages/contacto.html">Contacto</a></li>
+            </ul>   
+        </nav>
 <!--LOGO-->    
-    <img class="imagenlogo" src="./assets/img/logo.jpg" alt="logo">
+        <img src="./assets/img/logo.jpg" alt="logo">         
     </header> 
     
 <!--productos destacados con enlaces a la tienda-->
     <main>
-        <h1 class="tituloindex">PRODUCTOS DESTACADOS</h1>
+        <div>
+            <h1 class="tituloindex">PRODUCTOS DESTACADOS</h1>
+        </div>        
 
         <section class="grid-container">
             
-            <div class="grid-item">                
+        <div class="grid-item">                
                 <a href="./pages/tienda.html#anilloj7" >
-                <img class="imagindex" src="./assets/img/anilloJ7.jpg" alt="anilloj7">               
-                </a>          
+                <img class="imagindex animate__pulse animate__animated" src="./assets/img/anilloJ7.jpg" alt="anilloj7">               
+                </a>  
+            <div>
                 <h3 class="texto-card-index">
                     "Anillo J7"                     
                 </h3>
+            </div>        
+            <div>
                 <h3 class="texto-tachado">
                     ANTES: $15990. 
                 </h3>
+            </div>
+            <div>
                 <h3 class="texto-card-indexdos">
                     AHORA: $12990.
                 </h3>      
-            </div>   
-            
+            </div>
+                
+        </div>              
 
-            <div class="grid-item">                
+         <div class="grid-item">                
                 <a  href="./pages/tienda.html#arosr6">
-                <img  class="imagindex" src="./assets/img/arosR6.jpg" alt="arosr6">
+                <img  class="imagindex animate__pulse animate__animated" src="./assets/img/arosR6.jpg" alt="arosr6">
                 </a>
                 <h3 class="texto-card-index">
                     "Aros R6"                   
@@ -66,7 +78,7 @@
            
             <div class="grid-item">                
                 <a href="./pages/tienda.html#anillob3"> 
-                <img class="imagindex" src="./assets/img/anilloB3.jpg" alt="anillob3">
+                <img class="imagindex animate__pulse animate__animated" src="./assets/img/anilloB3.jpg" alt="anillob3">
                 </a>
                 <h3 class="texto-card-index">
                     "Anillo B3"
@@ -83,23 +95,22 @@
      
     </main>
     
-    <footer class="piedepagina" >
+    <footer>
  <!--logo-->
-    <section class="piedepagina">
-        <img class="logo-footer"src="./assets/img/logo.jpg" alt="logo">
+    <section>
+        <img src="./assets/img/logo.jpg" alt="logo">
     </section>
         
     <!--menu-->
     <section>
-        <ul class="navbar-footer">
-            <li><a class="botones-footer"href="./index.html">Inicio</a></li>
-            <li><a class="botones-footer"href="./pages/sobremi.html">Sobre mi</a></li>
-            <li><a class="botones-footer"href="./pages/tienda.html">Tienda</a></li>
-            <li><a class="botones-footer"href="./pages/enviosycambios.html">Envíos y cambios</a></li>
-            <li><a class="botones-footer"href="./pages/contacto.html">Contacto</a></li>
+        <ul>
+            <li><a class=botones-footer href="./index.html">Inicio</a></li>
+            <li><a class=botones-footer href="./pages/sobremi.html">Sobre mi</a></li>
+            <li><a class=botones-footer href="./pages/tienda.html">Tienda</a></li>
+            <li><a class=botones-footer href="./pages/enviosycambios.html">Envíos y cambios</a></li>
+            <li><a class=botones-footer href="./pages/contacto.html">Contacto</a></li>
         </ul>
-    </section>
-    
+    </section>    
     <!--menu para whatsapp e instagram-->
     <section >
         <a class="walink" href="https://wa.me/1122455439"target=_blank>
