@@ -1,45 +1,38 @@
-// media queries celu y tablet
-@media (max-width:768px) 
-{
+// media queries celu
+@media only screen and (max-width: 320px) {
 
- .imagindex {
-    width:6rem;
-    border: 10px solid beige;
-    border-radius:30%;           
+main{
+    .imagcabecera{
+        display:none;
+    }
+    .grid-container{
+        display:flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    section{
+        .grid-item{
+            display:flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+        }
+    }
 }
-.grid-container{
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;    
+
 }
-.texto-card-index{
-    font-size: 2rem;
+   
+ 
+footer{
+    section{
+        .walink{
+            display: none;
+        }
+        .iglink{
+            display: none;
+        }
+    }
 }
-.texto-card-indexdos {
-    font-size: 1.5rem;
+
 }
-.texto-tachado{
-    font-size: 0.5rem;
-}
-.navbar-footer{
-    display:none;    
-}
-.walink{
-    left:1,5rem;
-    bottom: 3rem;
-    position: fixed;
-}
-.iglink{
-    position: fixed;
-    left:1,5rem;
-    bottom:1,5rem;
-}
-.navbar{
-   display: block; 
-}
-.grid-containertienda{
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;   
-}
-}
+
+
+  

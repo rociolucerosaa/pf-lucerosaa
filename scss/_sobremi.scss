@@ -1,3 +1,7 @@
+
+main{ margin:0px;
+    padding:0px;
+
 section{
     .titulosobremi{
         font-size:35px;
@@ -5,7 +9,10 @@ section{
         text-align: center;
         text-decoration: underline;
         font-style: oblique;
-        padding: 35px;
+        display: flex;
+        justify-content: center;
+        padding:10px;
+        
     }                      
     .textosobremi{
             font-size:16px ;
@@ -13,44 +20,33 @@ section{
             padding: 30px;
         }
     } 
-
+.seccionform{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
 section{
+    
     .titulosobremi2{
         font-size: 20px;
         font-weight: 450;
         text-decoration: underline;
-        text-align: left;
-        padding-top: 25px;
-        padding-left:30px ;   
-    }
-    .textosobremi{
-        font-size:16px ;
-        text-align:left;
-        padding: 30px;
+        text-align: center;
+        display: flex;
+
+         
      
     }
-}
-
-section{
+   
     .formulario{
         font-size: 15px;
         font-weight: 550;
         text-decoration: underline;
-        text-align: left;
-        padding-top: 25px;
-        padding-left:30px ;
-        padding-bottom: 25px;    
+        text-align: left;   
+         
+     
     }
-
-    div{ .titulosobremi2{
-        font-size: 20px;
-        font-weight: 450;
-        text-decoration: underline;
-        text-align: left;
-        padding-top: 25px;
-        padding-left:30px ;   
-    }
-        
-    }
+   
+}
 }
 

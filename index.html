@@ -3,6 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content=" JB, Joyeria, joyeria artesanal, anilos, aros, accesorios, bronce, plata, alpaca,JB, Julia Bozzi">
+    <meta name="description" content="JB Joyeria artesanal, piezas unicas, pequeñas colecciones, hechas a mano, Plata 925, Oro 18 k, Bronce, Diseño Argentino.">
+    <link rel="shortcut icon" href="./assets/img/logo.jpg" type="image/x-icon">
     <title>JB | Joyería</title>
     <!--conexion con archivo css-->
     <link rel="stylesheet" href="./css/style.css">
@@ -13,29 +16,44 @@
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    
 </head>
 
 <body>   
 <!--header con nav bar, logo e imagen--> 
-    <header > 
+    <header> 
+        <div class="cabeceraindex">
+            <p class=" animate__bounceInLeft animate__animated " >
+              ¡ APROVECHÁ LOS INCREÍBLES DESCUENTOS EN NUESTRA <a class="enlacecabecera"href="./pages/tienda.html">TIENDA</a> !  
+            </p>
+        </div>        
+
+        
         <nav >
             <ul > 
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./pages/sobremi.html">Sobre mí</a></li>
-                <li><a href="./pages/tienda.html">Tienda</a></li>
-                <li><a href="./pages/enviosycambios.html">EnvÍos y cambios</a></li>
-                <li><a href="./pages/contacto.html">Contacto</a></li>
+                <img class="imaglogo" src="./assets/img/logo.jpg" alt="logo"> 
+                <li><a class="enlaceheader" href="./index.html">Inicio</a></li>
+                <li><a class="enlaceheader" href="./pages/sobremi.html">Sobre mi</a></li>
+                <li><a class="enlaceheader" href="./pages/tienda.html">Tienda</a></li>
+                <li><a class="enlaceheader" href="./pages/enviosycambios.html">EnvÍos y cambios</a></li>
+                <li><a class="enlaceheader" href="./pages/contacto.html">Contacto</a></li>
+                 
             </ul>   
         </nav>
-<!--LOGO-->    
-        <img src="./assets/img/logo.jpg" alt="logo">         
+  
+               
     </header> 
     
 <!--productos destacados con enlaces a la tienda-->
-    <main>
-        <div>
+    <main>       
+        <section class="imagcabecera">
+            <img src="./assets/img/manos2.jpg" alt="fotomanos">
+            <img src="./assets/img/manosola2.jpg" alt="manosola2">
+        </section>
+        <div>            
             <h1 class="tituloindex">PRODUCTOS DESTACADOS</h1>
         </div>        
+    
 
         <section class="grid-container">
             
@@ -96,21 +114,20 @@
     </main>
     
     <footer>
- <!--logo-->
-    <section>
-        <img src="./assets/img/logo.jpg" alt="logo">
-    </section>
-        
+    
     <!--menu-->
-    <section>
-        <ul>
-            <li><a class=botones-footer href="./index.html">Inicio</a></li>
-            <li><a class=botones-footer href="./pages/sobremi.html">Sobre mi</a></li>
-            <li><a class=botones-footer href="./pages/tienda.html">Tienda</a></li>
-            <li><a class=botones-footer href="./pages/enviosycambios.html">Envíos y cambios</a></li>
-            <li><a class=botones-footer href="./pages/contacto.html">Contacto</a></li>
-        </ul>
-    </section>    
+        <section>
+            <ul>
+                <li><a class=botones-footer href="./index.html">Inicio</a></li>
+                <li><a class=botones-footer href="./pages/sobremi.html">Sobre mi</a></li>
+                <li><a class=botones-footer href="./pages/tienda.html">Tienda</a></li>
+                <li><a class=botones-footer href="./pages/enviosycambios.html">Envíos y cambios</a></li>
+                <li><a class=botones-footer href="./pages/contacto.html">Contacto</a></li>
+                <img class="imaglogo" src="./assets/img/logo.jpg" alt="logo">
+            </ul>
+        </section>
+        
+    
     <!--menu para whatsapp e instagram-->
     <section >
         <a class="walink" href="https://wa.me/1122455439"target=_blank>
@@ -121,5 +138,6 @@
         </a>
     </section>
     </footer>
+   
 </body>
 </html>

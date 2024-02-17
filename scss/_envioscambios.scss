@@ -1,11 +1,17 @@
 section{
         .enviosycambios{
-        padding:20px;
+        padding:15px;
+        background-color: #c3b491; 
+        color:#4E4C45;
     }
     div{
         .tituloenviosycambios{
-         @extend .titulosobremi;
+         @extend .titulosobremi;         
          }      
+         .tituloenviosycambios{
+            background-color: #c3b491; 
+            color:#4E4C45;
+         }
         }
      div{
         .subtituloenvios{

@@ -1,21 +1,12 @@
-//caruosel sobremi.
-
-main{
-    .carousel{
-        padding: 15px;    
-    }
-    section{
-        #carouselExample{
-            max-width: 600px;
-            margin: auto;    
-        }
-
-        div{
-            .carousel-item-img{
-                width: 100%; 
-                height: auto; 
-                border-radius: 10px;
-              }
-        }
-    }
-} 
+#carouselExample{
+    max-width: 600px;
+    margin:auto;   
+}
+.carousel-item-img{
+    width: 100%; 
+    height: auto; 
+    border-radius: 15px;
+  }
+.carousel{
+    padding: 15px;    
+}

@@ -20,165 +20,157 @@ footer {
 }
 
 header {
-  background-image: url("../assets/img/manos.jpg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: column;
+  background-color: #fffff0;
 }
 header nav ul {
   display: flex;
-  border-radius: 10px;
-  margin: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: 1px solid #4e4c45;
 }
 header nav li {
   list-style-type: none;
 }
-header nav li a {
-  color: #e2e0c8;
+header nav li .enlaceheader {
+  color: #686c5e;
   font-size: 15px;
-  text-decoration: none;
-  background-color: #686c5e;
+  text-decoration: underline;
   text-align: center;
   font-weight: bold;
-  padding: 5px;
   border-radius: 5px;
-  margin: 20px;
   display: flex;
-  border: 1px solid white;
 }
-header img {
-  width: 65px;
-  padding: 25px;
+header nav li .enlaceheader:hover {
+  margin: 10px;
+  transition: 1s;
+}
+header nav .imaglogo {
+  width: 55px;
   border-radius: 80px;
-  margin: 15px;
   display: flex;
+  margin: 5px;
 }
 
-footer {
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  flex-direction: row-reverse;
-  background-color: #d9d99b;
-}
-footer section img {
-  width: 45px;
-  padding: 15px;
-  border-radius: 80px;
-  margin: 15px;
-  display: flex;
-  order: -1;
-}
 footer section ul {
   display: flex;
-  border-radius: 10px;
+  justify-content: space-evenly;
+  align-items: center;
+  border-top: 1px solid #4e4c45;
+  border-bottom: 1px solid #4e4c45;
 }
 footer section ul li {
   list-style-type: none;
 }
 footer section ul li .botones-footer {
-  color: #e2e0c8;
+  color: #686c5e;
   font-size: 15px;
-  text-decoration: none;
-  background-color: #686c5e;
+  text-decoration: underline;
   text-align: center;
   font-weight: bold;
-  padding: 6px;
   border-radius: 5px;
-  margin: 2px;
   display: flex;
-  border: 1px solid white;
 }
-footer section a .walink {
-  width: 27px;
-  position: fixed;
-  left: 10px;
-  bottom: 40px;
+footer section ul li .botones-footer:hover {
+  margin: 10px;
+  transition: 1s;
 }
-footer section a .iglink {
-  width: 27px;
-  position: fixed;
-  left: 10px;
-  bottom: 1px;
+footer section .imaglogo {
+  width: 55px;
+  border-radius: 80px;
+  display: flex;
+  padding: 10px;
 }
 
-@media (max-width: 768px) {
-  .imagindex {
-    width: 6rem;
-    border: 10px solid beige;
-    border-radius: 30%;
-  }
-  .grid-container {
-    display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
-  }
-  .texto-card-index {
-    font-size: 2rem;
-  }
-  .texto-card-indexdos {
-    font-size: 1.5rem;
-  }
-  .texto-tachado {
-    font-size: 0.5rem;
-  }
-  .navbar-footer {
+section a .walink {
+  width: 27px;
+  position: fixed;
+  left: 20px;
+  bottom: 45px;
+}
+section a .iglink {
+  width: 27px;
+  position: fixed;
+  left: 20px;
+  bottom: 15px;
+}
+
+@media only screen and (max-width: 320px) {
+  main .imagcabecera {
     display: none;
   }
-  .walink {
-    left: 1, 5rem;
-    bottom: 3rem;
-    position: fixed;
-  }
-  .iglink {
-    position: fixed;
-    left: 1, 5rem;
-    bottom: 1, 5rem;
-  }
-  .navbar {
-    display: block;
-  }
-  .grid-containertienda {
+  main .grid-container {
     display: flex;
-    flex-direction: column-reverse;
-    flex-wrap: wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  main .grid-container section .grid-item {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+  }
+  footer section .walink {
+    display: none;
+  }
+  footer section .iglink {
+    display: none;
   }
 }
-main .carousel {
-  padding: 15px;
-}
-main section #carouselExample {
+#carouselExample {
   max-width: 600px;
   margin: auto;
 }
-main section div .carousel-item-img {
+
+.carousel-item-img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+  border-radius: 15px;
 }
 
+.carousel {
+  padding: 15px;
+}
+
+header .cabeceraindex {
+  background-color: #fff8dc;
+  text-align: center;
+  padding: 10px;
+  color: #4e4c45;
+  font-size: 15px;
+  border: 1px solid #4e4c45;
+  text-decoration: none;
+}
+header .cabeceraindex .enlacecabecera {
+  color: #4e4c45;
+  text-decoration: underline;
+  font-size: 17px;
+}
+header .cabeceraindex div p {
+  background-color: beige;
+}
+
+main {
+  margin: 15px;
+}
+main .imagcabecera {
+  display: flex;
+  height: 350px;
+  justify-content: space-around;
+}
 main .grid-container {
   display: grid;
   grid-template-rows: repeat(1, 1fr);
   grid-template-columns: repeat(3, 5fr);
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
 }
 main .imagindex {
   width: 250px;
-  border: 10px solid beige;
-  border-radius: 30%;
+  border: 2px solid #fff8dc;
 }
 main div .tituloindex {
-  color: #aeae6f;
+  color: #4e4c45;
   font-size: 35px;
   font-weight: 500;
   text-align: center;
@@ -190,58 +182,59 @@ main section .grid-item {
   align-self: center;
 }
 
-section .titulosobremi, section div .tituloenviosycambios {
+main {
+  margin: 0px;
+  padding: 0px;
+}
+main section .titulosobremi, main section div .tituloenviosycambios {
   font-size: 35px;
   font-weight: 50;
   text-align: center;
   text-decoration: underline;
   font-style: oblique;
-  padding: 35px;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
 }
-section .textosobremi {
+main section .textosobremi {
   font-size: 16px;
   text-align: left;
   padding: 30px;
 }
-
-section .titulosobremi2 {
+main .seccionform {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+main section .titulosobremi2 {
   font-size: 20px;
   font-weight: 450;
   text-decoration: underline;
-  text-align: left;
-  padding-top: 25px;
-  padding-left: 30px;
+  text-align: center;
+  display: flex;
 }
-section .textosobremi {
-  font-size: 16px;
-  text-align: left;
-  padding: 30px;
-}
-
-section .formulario {
+main section .formulario {
   font-size: 15px;
   font-weight: 550;
   text-decoration: underline;
   text-align: left;
-  padding-top: 25px;
-  padding-left: 30px;
-  padding-bottom: 25px;
-}
-section div .titulosobremi2 {
-  font-size: 20px;
-  font-weight: 450;
-  text-decoration: underline;
-  text-align: left;
-  padding-top: 25px;
-  padding-left: 30px;
 }
 
 main .titulotienda {
   font-size: 35px;
-  font-weight: 500;
+  font-weight: 450;
   text-decoration: underline;
-  text-align: center;
+  text-align: left;
   padding: 20px;
+  background-color: #c3b491;
+}
+main .textotienda {
+  background-color: #c3b491;
+  border-bottom: 1px solid #4e4c45;
+  font-size: 17px;
+  text-align: right;
+  padding: 10px;
+  font-style: oblique;
 }
 main .grid-containertienda {
   display: grid;
@@ -258,8 +251,7 @@ main section .grid-item-tienda {
 }
 main section div .imagtienda {
   width: 250px;
-  border: 5px solid beige;
-  border-radius: 30%;
+  border: 2px solid #fff8dc;
 }
 main section div .producto {
   color: #686c5e;
@@ -289,6 +281,7 @@ main section .titulotalles {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #c3b491;
 }
 main section .contenedor-talles {
   display: flex;
@@ -296,6 +289,7 @@ main section .contenedor-talles {
   align-items: center;
   flex-wrap: wrap;
   flex-direction: row;
+  background-color: #c3b491;
 }
 main section div .imagtalles {
   width: 350px;
@@ -303,9 +297,19 @@ main section div .imagtalles {
   border-radius: 25%;
   display: block;
 }
+main section div .imagtalles:hover {
+  margin: 20px;
+  transition: 1s;
+}
 
 section .enviosycambios {
-  padding: 20px;
+  padding: 15px;
+  background-color: #c3b491;
+  color: #4E4C45;
+}
+section div .tituloenviosycambios {
+  background-color: #c3b491;
+  color: #4E4C45;
 }
 section div .subtituloenvios {
   font-size: 15px;
@@ -327,11 +331,17 @@ main .grid-containercontacto {
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
   align-items: center;
+  background-color: #c3b491;
+  color: rgb(96, 86, 72);
 }
 main section .grid-itemcontacto {
   justify-self: center;
   align-self: center;
   margin: 15px;
+  background-color: #fdfbf6;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid bisque;
 }
 main section div .titulocontacto {
   font-size: 35px;
@@ -357,12 +367,12 @@ main section div .tituloform {
   margin: 10px;
 }
 
-main {
-  background-color: #eae6ca;
+footer {
+  background-color: #fdf5e6;
 }
 
-footer {
-  background-color: #d9d99b;
+.mainsobremi {
+  background-color: #fffff0;
 }
 
 .texto-card-index {

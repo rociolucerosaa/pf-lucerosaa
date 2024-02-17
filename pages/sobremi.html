@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> JB | Sobre mí </title>
+    <meta name="keywords" content="JB, Joyeria, joyeria artesanal, anilos, aros, accesorios, bronce, plata, alpaca,JB, Julia Bozzi, biografia">
+    <meta name="description" content="JB Joyeria artesanal. Un poco sobre mi historia y mis inicios en el mundo de la joyeria.>
+    <title> JB | Sobre mi </title>
+    <link rel="shortcut icon" href="../assets/img/logo.jpg" type="image/x-icon">
     <!--conexion con css-->
     <link rel="stylesheet" href="../css/style.css">
     <!--conexion con google fonts-->
@@ -18,19 +21,18 @@
     <header > <!--header con nav bar, logo e imagen-->
         <nav>
          <ul>
-            <li><a href="../index.html">Inicio</a></li>
-            <li><a href="./sobremi.html">Sobre mí</a></li>
-            <li><a href="./tienda.html">Tienda</a></li>
-            <li><a href="./enviosycambios.html">Envios y cambios</a></li>
-            <li><a href="./contacto.html">Contacto</a></li>
+            <img class="imaglogo" src="../assets/img/logo.jpg" alt="logo"> 
+            <li><a class="enlaceheader" href="../index.html">Inicio</a></li>
+            <li><a class="enlaceheader" href="./sobremi.html">Sobre mi</a></li>
+            <li><a class="enlaceheader" href="./tienda.html">Tienda</a></li>
+            <li><a class="enlaceheader" href="./enviosycambios.html">Envios y cambios</a></li>
+            <li><a class="enlaceheader" href="./contacto.html">Contacto</a></li>
         </ul>   
-        </nav>
+        </nav>       
         
-        <!--LOGO-->
-        <img src="../assets/img/logo.jpg" alt="logo">
                 
     </header>
-    <main>
+    <main >
         <section class="carousel">
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
@@ -77,7 +79,7 @@
             </div>        
         </section>
 
-        <section > <!--form para contacto, lo puse en una lista porque si no no sabia como hacer para que no me queden tan desordenados en la web-->
+        <section class="seccionform"> <!--form para contacto, lo puse en una lista porque si no no sabia como hacer para que no me queden tan desordenados en la web-->
             <div>
                 <h3 class="titulosobremi2"> Consultas</h3>
             </div>
@@ -85,7 +87,7 @@
                 <form action="form.php" method="POST">
                     <ul>
                          <li>
-                         <label for="">Nombre y apellido</label>
+                         <label for="">Nombre y apellido : </label>
                          <input type="text" name="nombre" id="nombre" placeholder="Rocío Lucero">
                          </li>
                          <li>
@@ -108,33 +110,32 @@
         </section>
 
     </main>
-    <footer >
-        <!--logo-->
-        <section >
-            <img src="../assets/img/logo.jpg" alt="logo">
-        </section>
-              
-           <!--menu-->
-        <section>
-           <ul >
-               <li><a class=botones-footer href="../index.html">Inicio</a></li>
-               <li><a class=botones-footer href="./sobremi.html">Sobre mi</a></li>
-               <li><a class=botones-footer href="./tienda.html">Tienda</a></li>
-               <li><a class=botones-footer href="./enviosycambios.html">Envios y cambios</a></li>
-               <li><a class=botones-footer href="./contacto.html">Contacto</a></li>
-           </ul>
-           <!--menu para whatsapp e instagram-->
-        </section>
-            <section >
-                <a class="walink" href="https://wa.me/1122455439"target=_blank>
-                    <img class="walink" src="../assets/img/iconowhatsapp.png" alt="iconowhatsapp">
-                </a>
-                <a class="iglink" href="https://www.instagram.com/jb___joyas/"target=_blank>
-                    <img class="iglink"src="../assets/img/iconoinstagram.png" alt="iconowhatsapp">
-                </a>
+    <footer>
+    
+        <!--menu-->
+            <section>
+                <ul>
+                    <li><a class=botones-footer href="../index.html">Inicio</a></li>
+                    <li><a class=botones-footer href="./sobremi.html">Sobre mi</a></li>
+                    <li><a class=botones-footer href="./tienda.html">Tienda</a></li>
+                    <li><a class=botones-footer href="./enviosycambios.html">Envíos y cambios</a></li>
+                    <li><a class=botones-footer href="./contacto.html">Contacto</a></li>
+                    <img class="imaglogo" src="../assets/img/logo.jpg" alt="logo">
+                </ul>
             </section>
+            
+        
+        <!--menu para whatsapp e instagram-->
+        <section >
+            <a class="walink" href="https://wa.me/1122455439"target=_blank>
+                <img class="walink" src="../assets/img/iconowhatsapp.png" alt="iconowhatsapp">
+            </a>
+            <a class="iglink" href="https://www.instagram.com/jb___joyas/"target=_blank>
+                <img class="iglink"src="../assets/img/iconoinstagram.png" alt="iconowhatsapp">
+            </a>
         </section>
-    </footer>
+        </footer>
+       
 
 <!--link script-->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
